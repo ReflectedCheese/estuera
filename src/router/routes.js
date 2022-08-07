@@ -9,6 +9,21 @@ const routes = [
         name: "AboutPage",
         component: () => import("pages/About.vue"),
       },
+      {
+        path: "/videos",
+        name: "VideosPage",
+        component: () => import("pages/Videos.vue"),
+      },
+      {
+        path: "/discography",
+        name: "DiscographyPage",
+        component: () => import("pages/Discography.vue"),
+      },
+      {
+        path: "/contact",
+        name: "ContactPage",
+        component: () => import("pages/Contact.vue"),
+      },
     ],
   },
 
