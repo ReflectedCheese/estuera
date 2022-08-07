@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <img class="indexLogo" src="/img/estuera.svg?import." />
+    <h1>test</h1>
   </q-page>
 </template>
 
@@ -8,6 +8,12 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "IndexPage",
+  name: "AboutPage",
 });
 </script>
+
+<style scoped>
+h1 {
+  color: white;
+}
+</style>

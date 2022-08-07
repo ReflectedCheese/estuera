@@ -18,10 +18,14 @@
 }
 
 body {
-  background: linear-gradient(#164969, #000000);
+  background: linear-gradient(#164969, #000000, #000000);
   height: 100vh;
 }
 
 .footer {
   background: none;
+}
+
+.indexLogo {
+  max-width: 50vw;
 }
