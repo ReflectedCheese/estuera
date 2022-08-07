@@ -1,6 +1,8 @@
-# estuera (estuera)
+# estuera website
+![website](https://user-images.githubusercontent.com/55992639/183294563-d6cb7009-0053-4ff5-a2bd-bccbfb9e0331.png)
 
-website
+Moodboard
+![WebsiteMoodboard](https://user-images.githubusercontent.com/55992639/183294847-5e48fed3-8a80-4eed-8db2-61795ae6ee76.png)
 
 ## Install the dependencies
 ```bash
