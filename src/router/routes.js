@@ -3,27 +3,27 @@ const routes = [
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("src/pages/Home.vue") },
-      {
-        path: "/",
-        name: "about",
-        component: () => import("src/pages/Home.vue"),
-      },
-      {
-        path: "/videos",
-        name: "Videos",
-        component: () => import("src/pages/Home.vue"),
-      },
-      {
-        path: "/discography",
-        name: "DiscographyPage",
-        component: () => import("src/pages/Home.vue"),
-      },
-      {
-        path: "/contact",
-        name: "ContactPage",
-        component: () => import("src/pages/Home.vue"),
-      },
+      { path: "/", component: () => import("src/pages/IndexPage.vue") },
+      // {
+      //   path: "/",
+      //   name: "about",
+      //   component: () => import("src/pages/Home.vue"),
+      // },
+      // {
+      //   path: "/videos",
+      //   name: "Videos",
+      //   component: () => import("src/pages/Home.vue"),
+      // },
+      // {
+      //   path: "/discography",
+      //   name: "DiscographyPage",
+      //   component: () => import("src/pages/Home.vue"),
+      // },
+      // {
+      //   path: "/contact",
+      //   name: "ContactPage",
+      //   component: () => import("src/pages/Home.vue"),
+      // },
     ],
   },
 

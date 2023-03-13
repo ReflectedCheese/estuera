@@ -1,3 +1,7 @@
+.q-pa-md {
+  height: 100vh;
+}
+
 .headerLogo {
   width: 100px;
   padding-left: 25px;
@@ -9,7 +13,8 @@
 }
 
 .header {
-  // background: transparent;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
 }
 
 .footerTab {
@@ -18,9 +23,13 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  display: flex;
   background: linear-gradient(#164969, #000000, #000000);
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   position: relative;
   background-attachment: fixed;
   z-index: -1;
@@ -38,7 +47,7 @@ h5 {
 }
 
 .footer {
-  background: none;
+  background: black;
 }
 
 #indexLogo {
@@ -48,23 +57,20 @@ h5 {
 }
 
 #about-container {
-  // margin-top: 40vh;
-  // height: 100vh;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
 }
 
 #video-container {
-  // margin-top: 40vh;
-  // height: 100vh;
+  height: 100vh;
 }
 
 #disco-container {
-  // margin-top: 40vh;
-  // height: 100vh;
+  height: 100vh;
 }
 
 #contact-container {
-  // margin-top: 40vh;
-  // height: 100vh;
+  height: 100vh;
 }
 
 q-btn {
@@ -95,4 +101,50 @@ q-btn {
   &:hover {
     transition: all 0.2s ease;
   }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.cursor,
+.blur {
+  position: fixed;
+  left: 0;
+
+  pointer-events: none;
+  transition: transform 0.1s;
+  // background: linear-gradient(to right, #164969, aqua);
+  // animation: rotate 20s infinite;
+  // opacity: 0.3;
+}
+
+.cursor {
+  background-color: white;
+  background: linear-gradient(to right, #164969, aqua);
+  top: 0;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  z-index: -3;
+  opacity: 0.3;
+  // animation: rotate 20s infinite;
+  filter: blur(300px);
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  backdrop-filter: blur(200px);
 }
